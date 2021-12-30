@@ -1,0 +1,92 @@
+/*all*/
+.container {
+  font-family: "Space Mono", monospace;
+  background-color: #fefbf3;
+}
+
+.row {
+  padding: 5px;
+}
+
+h1 {
+  font-weight: 700;
+}
+h1,
+h3 {
+  color: #79b4b7;
+  font-family: "Fredericka the Great", cursive;
+}
+
+/*top*/
+
+.cities {
+  text-align: center;
+  padding: 10 30px;
+  margin-top: 20px;
+}
+
+.cities:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/*search*/
+#search-box {
+  width: 80%;
+  background-color: #fefbf3;
+  border: #79b4b7, solid, 1px;
+}
+.search-button {
+  width: 15%;
+  background-color: #79b4b7;
+  color: #fefbf3;
+  border-radius: 5px;
+  border: 1px solid #79b4b7;
+  transition: ease-in-out;
+  transition-duration: 7ms;
+}
+.search-button:hover {
+  opacity: 0.8;
+}
+
+/*weather*/
+
+.location-button {
+  background-color: #79b4b7;
+  color: #fefbf3;
+  border-radius: 5px;
+  border: 1px solid #79b4b7;
+  transition: ease-in-out;
+  transition-duration: 7ms;
+}
+.location-button:hover {
+  opacity: 0.8;
+}
+
+#temp {
+  font-size: 50px;
+  padding-top: 20px;
+}
+.units {
+  font-size: 20px;
+}
+
+.left-weather {
+  text-align: center;
+}
+.current-city {
+  padding-top: 20px;
+}
+
+.bottom-border {
+  border: 1px solid #fefbf3;
+  background-color: #79b4b7;
+  color: #fefbf3;
+  color: #fefbf3;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 20px;
+}
