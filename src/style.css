@@ -71,15 +71,24 @@ h3 {
   display: inline;
 }
 .units {
-  font-size: 20px;
+  font-size: 15px;
   display: inline;
+  vertical-align: top;
+  font-weight: bold;
 }
-
+a {
+  text-decoration: none;
+  color: gray;
+}
 .left-weather {
   text-align: center;
 }
 .current-city {
   padding-top: 20px;
+}
+
+#weather-description {
+  text-transform: capitalize;
 }
 
 .bottom-border {
@@ -94,4 +103,14 @@ h3 {
 
 p {
   font-size: 20px;
+}
+
+img {
+  width: 50px;
+  margin-bottom: 4px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 15px;
 }
