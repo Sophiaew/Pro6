@@ -75,10 +75,7 @@ h3 {
   vertical-align: top;
   font-weight: bold;
 }
-a {
-  text-decoration: none;
-  color: gray;
-}
+
 .left-weather {
   text-align: center;
 }
@@ -112,4 +109,17 @@ img {
 ul {
   list-style-type: none;
   font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.right-weather .active {
+  color: gray;
+  cursor: default;
+}
+
+.right-weather .active .hover {
+  text-decoration: none;
 }
