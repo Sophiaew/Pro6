@@ -28,20 +28,26 @@ function searchCity(event) {
     alert("Please search for a city");
   }
 }
+//City weather
 function showTemp(response) {
   console.log(response.data);
   let temp = document.querySelector("#temp");
   let weatherDescription = document.querySelector("#weather-description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   let currentTemp = Math.round(response.data.main.temp);
   let currentWeather = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.main.humidity;
   temp.innerHTML = `${currentTemp}°`;
   weatherDescription.innerHTML = `${currentWeather}`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/04d@2x.png`
+  );
 }
-
+//City position
 function showLocation(position) {
   console.log(position.coords.longitude);
   console.log(position.coords.latitude);

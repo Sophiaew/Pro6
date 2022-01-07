@@ -34,12 +34,11 @@ h3 {
 }
 /*search*/
 #search-box {
-  width: 80%;
+  width: 100%;
   background-color: #fefbf3;
   border: #79b4b7, solid, 1px;
 }
 .search-button {
-  width: 15%;
   background-color: #79b4b7;
   color: #fefbf3;
   border-radius: 5px;
@@ -85,6 +84,7 @@ a {
 }
 .current-city {
   padding-top: 20px;
+  text-transform: capitalize;
 }
 
 #weather-description {
