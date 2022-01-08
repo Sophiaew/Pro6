@@ -11,6 +11,36 @@ let day = days[now.getDay()];
 let time = document.querySelector("#current-date");
 time.innerHTML = `${day} ${hour}:${minute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2 bottom-border">
+    <h2>${day}</h2>
+    <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="sunny">
+    <div class="weather-forecast-temperatures">
+      <p>
+        <span class="weather-forecast-temperature-max">
+          24° 
+        </span>
+        <span class="weather-forecast-temperature-min">
+          14°
+        </span>
+      </p>
+    </div>
+  </div>
+  `;
+  });
+
+  forecastHTM = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //City
 
 function searchCity(event) {
@@ -93,8 +123,12 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
+displayForecast();
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+//forecast

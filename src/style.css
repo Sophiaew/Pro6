@@ -123,3 +123,11 @@ a {
 .right-weather .active .hover {
   text-decoration: none;
 }
+
+.weather-forecast-temperature-min {
+  color: lightgray;
+}
+
+.weather-forecast {
+  text-align: center;
+}
